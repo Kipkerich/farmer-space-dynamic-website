@@ -21,4 +21,8 @@ from . import views as template_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', template_views.home, name='home-url'),
+    path('post/', template_views.post, name = 'post-url'),
+    path('about/', template_views.about, name = 'about-url'),
+    path('contact/', template_views.contact, name = 'contact-url'),
+
 ]
